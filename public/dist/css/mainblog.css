@@ -82,6 +82,11 @@ a.trans-back {
   line-height: 1.2rem;
   font-weight: 500; }
 
+.quotelong {
+  margin: 0px  0px 10px 20px;
+  line-height: 1.2rem;
+  font-weight: 500; }
+
 .footnotes {
   margin-top: 30px;
   text-align: left; }
@@ -129,7 +134,7 @@ p.mb4card {
   border: 0px solid red;
   box-shadow: 0px 10px 50px silver;
   background-color: rgba(0, 0, 200, 0.5);
-  background-image: url("../img/MaestasReykjavikBanner.png");
+  background-image: url("../img/MaestasReykjavikBanner.jpg");
   border-radius: 0px;
   border: 0px solid red;
   box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3); }
@@ -146,4 +151,8 @@ p.mb4card {
 .green {
   color: green; }
 
-/*   mb-4        321111111111111       to mb4card */
+.side {
+  text-align: justify;
+  color: darkgreen;
+  padding-left: 15px !important;
+  margin-left: 15px; }

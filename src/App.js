@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router,   NavLink, Redirect, Prompt} from 'react-router-dom';
 import Route from 'react-router-dom/Route'; 
 import AppApi from './AppApi';
+import Users from './users/Users';
+import AppInput from './Components/AppInput';
 
 const User = (params) => {
   return (  <h1> WELCOME DAILY-TECH USER {params.username}   </h1>)
@@ -60,28 +62,28 @@ class App extends Component {
           <li style={menu}>
             <NavLink to="/"  style={a} exact activeStyle={
               { color:'white' }
-            }>Home</NavLink>
+            }>HOME</NavLink>
           </li>
           <li style={menu}>
             <NavLink to="/about"  style={a} exact activeStyle={
               { color:'white' }
-            }>About</NavLink>
+            }>ABOUT DAILY TECH</NavLink>
           </li>
           <li style={menu}>
             <NavLink to="/user/Member"  style={a} exact activeStyle={
               { color:'white' }
-            }>USER MEMBER</NavLink>
+            }>MEMBER ACCESS</NavLink>
           </li>
           <li style={menu}>
             <NavLink to="/user/Guest" style={a} exact activeStyle={
               { color:'white' }
-            }>User GUEST</NavLink>
+            }>GUEST ACCESS</NavLink>
           </li>
           </ul>
           <Prompt
             when={!this.state.loggedIn}
             message={(location)=>{
-               return location.pathname.startsWith('/user') ? 'Log into Daily Tech to left' : true
+               return location.pathname.startsWith('/user') ? 'To Access, Please Log in as Guest or Member' : true
              }}
           />
 
@@ -110,6 +112,8 @@ class App extends Component {
         </div>
       </Router> 
       </div>
+      <AppInput />
+      <Users />
       <AppApi />
       </div>
     );

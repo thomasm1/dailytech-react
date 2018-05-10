@@ -217,7 +217,7 @@ p.mb-4 {
 
 div.card.card-profile.mb-4#div5 {
   background-color: #00b0ec;
-  background-image: url("../img/MaestasReykjavikBanner.png"); }
+  background-image: url("../img/MaestasReykjavikBanner.jpg"); }
 
 div.card.card-profile.mb-4 {
   box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3); }
@@ -233,7 +233,7 @@ div.card.card-profile.mb-4 {
   border: 0px solid red;
   box-shadow: 0px 10px 50px silver;
   background-color: blue;
-  background-image: url("../img/MaestasReykjavikBanner.png");
+  background-image: url("../img/MaestasReykjavikBanner.jpg");
   border-radius: 0px;
   border: 0px solid red;
   box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3); }
@@ -279,7 +279,7 @@ div.card.card-link-list {
 
 div.card-header {
   background-color: #00b0ec;
-  background-image: url("../img/MaestasReykjavikBanner.png");
+  background-image: url("../img/MaestasReykjavikBanner.jpg");
   padding-top: 20px;
   min-height: 230px;
   border: 0px solid red;
@@ -299,7 +299,7 @@ div.col-lg-3 {
 div.card.visible-md-block.visible-lg-block {
   margin-top: 0px;
   background-color: #00b0ec;
-  background-image: url("../img/MaestasReykjavikBanner.png");
+  background-image: url("../img/MaestasReykjavikBanner.jpg");
   padding-top: 30px;
   min-height: 230px;
   border-radius: 0px;
@@ -325,18 +325,18 @@ div.card-block img {
 div.card-block.text-center a {
   background-color: #00b0ec;
   color: blue;
-  background-image: url("../img/MaestasReykjavikBanner.png"); }
+  background-image: url("../img/MaestasReykjavikBanner.jpg"); }
 
 div.card-block.text-center {
   background-color: #00b0ec;
-  background-image: url("../img/MaestasReykjavikBanner.png");
+  background-image: url("../img/MaestasReykjavikBanner.jpg");
   box-shadow: 0px 10px 50px transparent;
   font-weight: 800; }
 
 /* SECTION blocks 2, 3 */
 #center-col {
   background-color: #00b0ec;
-  background-image: url("../img/MaestasReykjavikBanner.png");
+  background-image: url("../img/MaestasReykjavikBanner.jpg");
   padding-top: 0px;
   min-height: 180px;
   border-radius: 0px;
@@ -344,7 +344,7 @@ div.card-block.text-center {
 
 li.map2.media.list-group-item.p-4 {
   background-color: blue;
-  background-image: url("../img/MaestasReykjavikBanner.png");
+  background-image: url("../img/MaestasReykjavikBanner.jpg");
   padding-top: 0px;
   min-height: 1400px;
   border-radius: 0px;
@@ -476,7 +476,7 @@ div#map0 {
   text-align: justify;
   font-size: 1.2rem;
   font-weight: 500;
-  color: darkblue;
+  color: aliceblue;
   line-height: 1.3rem; }
 
 #headerquote > .mb-4 {
@@ -546,5 +546,17 @@ button {
   opacity: .8; }
 
 .smalltech {
-  fontsize: 50%;
-  color: steelblue; }
+  font-size: 1.3rem !important;
+  color: purple; }
+
+#apod_explaination {
+  max-height: 250px;
+  padding: 2%;
+  overflow-y: scroll;
+  background-color: rgba(4, 142, 196, 0.459); }
+
+h2.title {
+  color: aliceblue; }
+
+div.media-body.thesis {
+  max-height: 470px; }

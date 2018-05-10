@@ -1,3 +1,6 @@
+#secret-button {
+  color: aliceblue; }
+
 .secret {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -14,6 +17,8 @@
 
 #secret-paragraph {
   padding: 5% 5%; }
+  #secret-paragraph a {
+    color: purple; }
 
 #secret-buttonMP {
   padding: 5% 5% 1%;
@@ -57,6 +62,16 @@
   font-weight: bold;
   cursor: pointer; }
 
+#secret-buttonAPR {
+  padding: 5% 5% 1%;
+  font-family: 'monoton';
+  cursor: pointer; }
+
+#secret-buttonAPR:hover {
+  color: darkslateblue;
+  font-weight: bold;
+  cursor: pointer; }
+
 .paragraph {
-  max-height: 800;
+  max-height: 750px;
   overflow-y: scroll; }
