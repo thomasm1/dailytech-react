@@ -21,7 +21,8 @@
   padding: 1px;
   margin-top: 3px;
   background-color: #9ac9e7;
-  opacity: .7; }
+  opacity: .7;
+  z-index: 1001; }
 
 #window {
   background-color: transparent;
@@ -35,4 +36,8 @@
   margin-right: auto;
   padding: 5px 5px 3px;
   height: 30px;
-  line-height: 1.3em; }
+  line-height: 1.3em;
+  z-index: 1001; }
+
+#innerform {
+  z-index: 1001; }
