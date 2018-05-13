@@ -27,7 +27,7 @@ class Users extends Component {
 
   render(){
     return (<div style={{backgroundColor:'yellow',opacity:'.8',padding:'10px'}}>
-      <button onClick={this.debitMyAccount}>Debit Accounts by 10 units</button>
+      <button onClick={this.debitMyAccount}>Subtract  10 units</button>
       <br/>
       <h1>{this.state.title}</h1>
       {

@@ -31,7 +31,7 @@ const FuncCustomComp = (props) => {
 class AppInput extends Component {
 
   onKeyUp = (passed, e) => {
-    if (e.keyCode == 13) {
+    if (e.keyCode === 13) {
       console.log(passed)
       switch (passed) {
         case 'firstName':

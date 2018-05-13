@@ -4,7 +4,7 @@ import { BrowserRouter as Router,   NavLink, Redirect, Prompt} from 'react-route
 import Route from 'react-router-dom/Route'; 
 import AppApi from './AppApi';
 import Users from './users/Users';
-import AppInput from './Components/AppInput';
+import AppInput from './Components/AppInput'; 
 
 const User = (params) => {
   return (  <h1> WELCOME DAILY-TECH USER {params.username}   </h1>)
@@ -110,7 +110,7 @@ class App extends Component {
           this.state.loggedIn ? ( <User username={match.params.username}/>) : (<Redirect to='/' />)
         )}/>
         </div>
-      </Router> 
+      </Router>  
       </div>
       <AppInput />
       <Users />
