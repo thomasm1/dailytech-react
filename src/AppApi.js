@@ -4,7 +4,7 @@ import AddProject from './Components/AddProject';
 // import logo from './logo.svg';
 import uuid from 'uuid';
 import $ from 'jquery';
-// import './App.css';
+import './css/appapi.css';
 import './' 
 import Todos from './Components/Todos'; 
 
@@ -81,10 +81,7 @@ class AppApi extends Component {
     render() { 
     return (
       <div className="AppApi">  
-
-      <div className="App-header">
-      <h1 className="App-title">OUR DAILY TECH BLOG
-      </h1></div>
+ 
       <br />
       <AddProject addProject={this.handleAddProject.bind(this)} />
         <hr />

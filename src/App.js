@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
-// import './App.css';
+import './App.css';
 import { BrowserRouter as Router,   NavLink, Redirect, Prompt} from 'react-router-dom';
 import Route from 'react-router-dom/Route'; 
 import AppApi from './AppApi';
 import Users from './users/Users';
 import AppInput from './Components/AppInput'; 
+import Navbar from './Modules/Navbar';
+ 
 
 const User = (params) => {
-  return (  <h1> WELCOME DAILY-TECH USER {params.username}   </h1>)
+  return (  <h1> WELCOME DAILY-TECH USER {params.username}</h1>)
 }
 
 class App extends Component {
@@ -20,62 +22,34 @@ class App extends Component {
     }))
   }
   render() {
-    let style1 = { 
-         color:'white',
-      backgroundColor: 'rgba(210, 47, 155, 0.2)',
-    padding:'2rem',
-    textDecoration:'none',
-    listStyleType:'none'
-    }; 
-  let a = {
-    color:'yellow',
-    textDecoration:'none',
-    listStyleType:'none', 
-    margin:'.5rem', 
-  }
-  let menu = {
-    display:'inline-block',
-    float:'left', 
-    padding:'+.5rem',
-    margin:'.5rem', 
 
-
-  }
-    let style2 = { 
-      backgroundColor: 'steelblue',
-    padding:'2rem',
-    textDecoration:'none',
-    listStyleType:'none',
-    maxHeight:'600px',
-    overflowY:'scroll'
-    };
     return (
       <div>
-      <div  style={style2} >
+      <div  id="style2">
 
 
-    <input type="button" value={this.state.loggedIn ? 'log out': 'log in'} onClick={this.loginHandle.bind(this)}/>
-
+    <input id="login" type="button" value={this.state.loggedIn ? 'log out': 'log in'} onClick={this.loginHandle.bind(this)}/>
+ <Navbar />
       <Router>
-        <div  style={style1} className="App">
-        <ul style={a}>
-          <li style={menu}>
-            <NavLink to="/"  style={a} exact activeStyle={
+        <div  id="style1" className="App">
+        <ul id="a">
+          <li id="menu1">
+            <NavLink to="/"   id="a" exact activeStyle={
               { color:'white' }
             }>HOME</NavLink>
           </li>
-          <li style={menu}>
-            <NavLink to="/about"  style={a} exact activeStyle={
+          <li id="menu1">
+            <NavLink to="/about"   id="a"  exact activeStyle={
               { color:'white' }
             }>ABOUT DAILY TECH</NavLink>
           </li>
-          <li style={menu}>
-            <NavLink to="/user/Member"  style={a} exact activeStyle={
+          <li id="menu1">
+            <NavLink to="/user/Member"  id="a"  exact activeStyle={
               { color:'white' }
             }>MEMBER ACCESS</NavLink>
           </li>
-          <li style={menu}>
-            <NavLink to="/user/Guest" style={a} exact activeStyle={
+          <li id="menu1">
+            <NavLink to="/user/Guest" id="a" exact activeStyle={
               { color:'white' }
             }>GUEST ACCESS</NavLink>
           </li>
@@ -87,11 +61,11 @@ class App extends Component {
              }}
           />
 
-    <div  style={{float:'left'}} >
+    <div id="route1" >
         <Route path="/" exact strict render={
           () => {
             return ( 
-            <div  style={style1} >
+            <div  id="style1" >
             <h1>OUR DAILY TECH</h1>
             <h4>MUSING BLOCKCHAIN</h4>
             <h4>WEB DEV AFFAIRS</h4>
@@ -103,7 +77,7 @@ class App extends Component {
         </div>
         <Route path="/about" exact strict render={
           () => {
-            return ( <h1>ABOUT<br /> DAILY TECH</h1>);
+            return ( <h2>ABOUT<br /> DAILY TECH</h2>);
           }
         }/>
         <Route path="/user/:username" exact strict render={({match})=>(
@@ -112,9 +86,10 @@ class App extends Component {
         </div>
       </Router>  
       </div>
-      <AppInput />
-      <Users />
       <AppApi />
+      
+      <Users />
+      <AppInput />
       </div>
     );
   }

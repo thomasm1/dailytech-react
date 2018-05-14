@@ -1,5 +1,6 @@
 import React, { Component } from 'react';  
 import uuid from 'uuid';
+import '../css/appapi.css';
 
 class AddProject extends Component { 
   constructor(){
@@ -33,16 +34,12 @@ class AddProject extends Component {
   
   render() { 
     
-    let style3 = {  
-     padding:'2rem', 
-     backgroundColor: 'rgba(0, 247, 255, 0.4)'
-     };
     let categoryOptions = this.props.categories.map(category => {
         return <option key = {category} value={category}>{category} </option>
     });
     return (
-      <div  style={style3} > 
-       <h3> Add Post</h3>         
+      <div  id="appapi" > 
+       <h4> Add Post</h4>         
        <form onSubmit={this.handleSubmit.bind(this)}>
        <div>
        <label>Title  </label><br />

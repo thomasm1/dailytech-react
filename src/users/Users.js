@@ -10,7 +10,7 @@ class Users extends Component {
       {name:"UserOned", bal:30},
       {name:"UserOnee", bal:50}
     ],
-    title:"Users List"
+    title:"LEDGER LIST"
   }
  
   // Handle to modify state
@@ -26,7 +26,9 @@ class Users extends Component {
   }
 
   render(){
-    return (<div style={{backgroundColor:'yellow',opacity:'.8',padding:'10px'}}>
+    var users = {backgroundColor:'steelblue',opacity:'.8',padding:'10px'}
+
+    return (<div style={users}>
       <button onClick={this.debitMyAccount}>Subtract  10 units</button>
       <br/>
       <h1>{this.state.title}</h1>

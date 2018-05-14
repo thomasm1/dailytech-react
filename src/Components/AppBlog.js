@@ -11,11 +11,11 @@ import $ from 'jquery';
 class AppBlog extends Component { 
     constructor() { 
       super(); 
-      this.state:{
-      todos:[],
-      blogpost17:
+      state:{}
+      todos:[]
       
-      projects: [`
+      projects: [
+        `
       <p class="firstparagraph">First, let me describe that blockchain technologies, i.e. Government contracts, Business contracts, Bitcoin and other
     
     cryptocurrencies, all rely on network graph theory, both on the low-level programming technology (peer-to-peer global
