@@ -9,7 +9,7 @@ import Navbar from './Modules/Navbar';
  
 
 const User = (params) => {
-  return (  <h1> WELCOME DAILY-TECH USER {params.username}</h1>)
+  return (  <h3> WELCOME DAILY-TECH USER {params.username}</h3>)
 }
 
 class App extends Component {

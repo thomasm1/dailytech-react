@@ -21,9 +21,9 @@ export default () => (
       <ul className="nav navbar-nav profile nav-space">
  
  
-<NavItem className="nav navbar-nav profile nav-space" href='get-started.html'>OUR DAILY TECH BLOG</NavItem>
+<NavItem className="nav navbar-nav profile nav-space" href='ourdailytech.html'>OUR DAILY TECH BLOG</NavItem>
 <NavItem href='components.html'>BLOG POST ARCHIVE</NavItem>
-<NavItem href='get-started.html'>CODING &amp; DATA</NavItem> 
+<NavItem href='ourdailytech.html'>CODING &amp; DATA</NavItem> 
 <NavItem href='components.html'>_FOR_CAT_EYES_ONLY_</NavItem> 
         <li> 
           <a href="services.html">ABOUT</a> 
